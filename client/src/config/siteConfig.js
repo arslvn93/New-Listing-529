@@ -1,7 +1,7 @@
 /**
  * Site Configuration
  * This file contains all configurable content for the website
- * Last updated: 2025-09-09T01:02:32.928Z
+ * Last updated: 2025-09-09T01:03:58.604Z
  */
 
 // contactInfo configuration
@@ -67,7 +67,7 @@ export const heroVideo = {
   playsInline: true
 };
 
-// homeShowcaseSections configuration  
+// homeShowcaseSections configuration
 export const homeShowcaseSections = [
   {
     id: "section1",
@@ -97,15 +97,15 @@ export const homeShowcaseSections = [
 
 // neighborhood configuration
 export const neighborhood = {
-  name: "Toronto",
+  name: "Entertainment District",
   city: "Toronto",
-  description: "Toronto's premier destination for culture, dining, and urban living.",
+  description: "Step into Toronto’s Entertainment District — a compact, walkable urban neighbourhood anchored by world-class theatres, dining, and cultural institutions. Living at 80 John St places you within blocks of the waterfront, major event venues and an ever-evolving restaurant scene, delivering an energetic, convenience-first city lifestyle.",
   highlights: [
-    "Steps to theaters, dining, and entertainment venues",
-    "Direct access to PATH underground walkway", 
-    "TTC subway and streetcar connections",
-    "Walk to financial district and shopping",
-    "Vibrant urban lifestyle with excellent walk score"
+    "Steps to theatres, film venues and cultural attractions including TIFF Bell Lightbox",
+    "Minutes from CN Tower, Rogers Centre and Scotiabank Arena for sports & events",
+    "Exceptional dining and nightlife along King Street West and nearby rooftop bars",
+    "Direct access to waterfront trails and parks like HTO Park and the Martin Goodman Trail",
+    "Unmatched walkability and transit connections — ideal for car-free city living"
   ]
 };
 
@@ -113,45 +113,59 @@ export const neighborhood = {
 export const neighborhoodAmenities = [
   {
     id: 1,
-    name: "Local Grocery Store",
-    distance: "0.2 miles",
+    name: "Stackt Market",
+    distance: "",
     category: "shopping",
     iconName: "ShoppingBag"
   },
   {
     id: 2,
-    name: "Nearby Park",
-    distance: "0.1 miles", 
+    name: "Grasett Park",
+    distance: "",
     category: "recreation",
     iconName: "Leaf"
   },
   {
     id: 3,
-    name: "Public School",
-    distance: "0.6 miles",
-    category: "education", 
+    name: "TIFF Bell Lightbox",
+    distance: "",
+    category: "education",
     iconName: "School"
   },
   {
     id: 4,
-    name: "Fine Dining",
-    distance: "0.2 miles",
+    name: "The Cure by TMA",
+    distance: "",
     category: "dining",
-    iconName: "Wine"
+    iconName: "Coffee"
   },
   {
     id: 5,
-    name: "Casual Dining",
-    distance: "0.4 miles",
+    name: "Petros82 Restaurant",
+    distance: "",
     category: "dining",
     iconName: "Utensils"
   },
   {
     id: 6,
-    name: "Transit Station",
-    distance: "0.4 miles",
+    name: "Union Station GO",
+    distance: "",
     category: "transportation",
-    iconName: "Train"
+    iconName: "Car"
+  },
+  {
+    id: 7,
+    name: "Little Canada",
+    distance: "",
+    category: "recreation",
+    iconName: "Users"
+  },
+  {
+    id: 8,
+    name: "Niagara Falls Canada (tour agency)",
+    distance: "",
+    category: "business",
+    iconName: "Wifi"
   }
 ];
 
@@ -160,34 +174,26 @@ export const neighborhoodStats = [
   {
     id: 1,
     title: "Walk Score",
-    value: "95/100",
+    value: "100/100",
     caption: "Walker's Paradise",
     iconName: "BadgeCheck",
     color: "bg-green-500"
   },
   {
     id: 2,
-    title: "Transit Score", 
-    value: "94/100",
-    caption: "Excellent Transit",
+    title: "Transit Score",
+    value: "100/100",
+    caption: "Rider's Paradise",
     iconName: "Compass",
     color: "bg-blue-500"
   },
   {
     id: 3,
-    title: "School Rating",
-    value: "8/10", 
-    caption: "Great Schools",
-    iconName: "School",
+    title: "BikeScore",
+    value: "95/100",
+    caption: "Biker's Paradise",
+    iconName: "Compass",
     color: "bg-indigo-500"
-  },
-  {
-    id: 4,
-    title: "Commute Time",
-    value: "8 min",
-    caption: "To Financial District",
-    iconName: "Clock", 
-    color: "bg-amber-500"
   }
 ];
 
@@ -207,7 +213,7 @@ export const openHouseBenefits = [
   },
   {
     id: 3,
-    title: "School District Information", 
+    title: "School District Information",
     description: "Boards: Toronto District School Board (TDSB) & Toronto Catholic District School Board (TCDSB).",
     iconName: "GraduationCap"
   },
@@ -241,7 +247,16 @@ export const openHouseDetails = {
   ctaText: "RSVP for Open House",
   virtualTourAvailable: true,
   virtualTourUrl: "https://tours.openhousemedia.ca/sites/80-john-st-2912-toronto-on-m5v-3x4-15850296/branded",
-  allOpenHouses: [{"date":"Friday, September 12, 2025","time":"2:00 PM - 4:00 PM"},{"date":"Sunday, September 14, 2025","time":"1:00 PM - 3:00 PM"}]
+  allOpenHouses: [
+    {
+      date: "Friday, September 12, 2025",
+      time: "2:00 PM - 4:00 PM"
+    },
+    {
+      date: "Sunday, September 14, 2025",
+      time: "1:00 PM - 3:00 PM"
+    }
+  ]
 };
 
 // packageItems configuration
@@ -260,7 +275,7 @@ export const packageItems = [
   },
   {
     id: 3,
-    title: "School District Information", 
+    title: "School District Information",
     description: "Boards: Toronto District School Board (TDSB) & Toronto Catholic District School Board (TCDSB).",
     iconName: "GraduationCap"
   },
@@ -331,7 +346,7 @@ export const siteBranding = {
   favicon: "/favicon.ico",
   colors: {
     primary: "#D9A566",
-    primaryDark: "#8B6839", 
+    primaryDark: "#8B6839",
     primaryLight: "#E6C38C",
     dark: "#111111",
     light: "#FFFFFF"
@@ -359,7 +374,7 @@ export const testimonials = [
   {
     id: 1,
     name: "David Chen",
-    role: "Recent Homebuyer", 
+    role: "Recent Homebuyer",
     content: "Arslan Ahmed provided exceptional service and found us exactly what we were looking for in Toronto.",
     avatar: "https://randomuser.me/api/portraits/men/22.jpg"
   },
@@ -372,9 +387,10 @@ export const testimonials = [
   },
   {
     id: 3,
-    name: "Mark Williams", 
+    name: "Mark Williams",
     role: "Neighborhood Resident",
     content: "Living in this area, you appreciate the convenience and lifestyle. Arslan Ahmed knows the market incredibly well.",
     avatar: "https://randomuser.me/api/portraits/men/35.jpg"
   }
 ];
+
